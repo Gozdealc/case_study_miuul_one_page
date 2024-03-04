@@ -1,0 +1,116 @@
+/* Project Name : SPA (One Page)
+Project Version: v1.0.0 */
+:root{
+    --miuul_bg_color: #646363;
+    --miuul_color: black;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html {
+    font-size: 18px !important;
+}
+
+body {
+        font-family: "Madimi One", sans-serif;
+        position: relative;
+        background-color: var(--miuul_bg_color);
+        color: var(--miuul_color);
+}
+p{
+    text-align: justify;
+    padding: 0.5rem 1rem;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+img:hover {
+    opacity: 0.8;
+}
+.miuul_line_clamp5 {
+    display: -webkit-box;
+    overflow: hidden;
+    --webkit-line-clamp: 5;
+    --webkit-box-orient: vertical;
+}
+.miuul_line_clamp10 {
+    display: -webkit-box;
+    overflow: hidden;
+    --webkit-line-clamp: 5;
+    --webkit-box-orient: vertical;
+}
+.miuul_line_clamp15 {
+    display: -webkit-box;
+    overflow: hidden;
+    --webkit-line-clamp: 5;
+    --webkit-box-orient: vertical;
+}
+/* HEADER */
+
+#miuul_header_id {
+background-image: url(./images\ \(1\).jpg);
+background-size: cover;
+background-position: 45% 45%;
+z-index: -1;
+height: 90vh;
+padding-top: 20px;
+text-align: center;
+}
+
+#miuul_heading_id{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--miuul_bg_color);
+
+}
+#miuul_header_p_id {
+    text-align: center;
+    color: var(--miuul_bg_color);
+
+}
+.miuul_header_icon {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 4%;
+    /* border: 1px solid rgba(0, 0, 0.9); */
+    font-size: 1.8rem;
+}
+#miuul_linkedin_d {
+    color: blue;
+}
+#miuul_youtube_id {
+    color: red;
+}
+#miuul_github_id {
+    color: black;
+}
+#miuul_footer_id {
+    background-color: var(--miuul_bg_color);
+    color: var(--miuul_color);
+    padding: 1.1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#back_to_top_id {
+    position: fixed;
+    color: yellow;
+    right: 0;
+    bottom: 0;
+    width: 1.2rem;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background-color: black;
+}
+#back_to_top_id:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
