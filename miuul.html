@@ -29,45 +29,260 @@
     <!-- EXTERNAL CSS3 -->
     <link rel="stylesheet" href="miuul.css">
 
+     <!-- Bootstrap CSS v5.2.1 -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+     crossorigin="anonymous"
+ />
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+    ></script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+    ></script>
+
     
 </head>
-<body>
+<body data-bs-spy="scrolling" data-bs-target="#miuul_navbar_id">
 
     <!-- START CODES  -->
+    <nav
+        id="miuul_navbar_id"
+        class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark"
+    >
+        <div class="container">
+            <a class="navbar-brand" href="miuul.html">LOGO</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    
+                    <li class="nav-item me-4">
+                        <a href="#section_about_me_id" class="nav-link" id="about_me_link_id">About Me</a>
+                    </li>
 
-    <!-- NAVBAR -->
-    <nav id="miuul_navbar_id">
-       <a href="#" id="home_page_link_id">Homepage</a>
-       <a href="#section_about_me_id" id="about_me_link_id">About Me</a>
-       <a href="#section_blog_id" id="blog_link_id">Blog</a>
-       <a href="#section_contact_id" id="contact_link_id">Contact</a>
-       <a href="#" id="my_CV_link_id">My CV</a>
+                    <li class="nav-item me-4">
+                        <a href="#section_blog_id" class="nav-link" id="blog_link_id">Blog</a>
+                    </li>
+
+                    <li class="nav-item me-4">
+                        <a href="#section_contact_id" class="nav-link" id="contact_link_id">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="myCv.html" class="nav-link" id="my_CV_link_id">My CV</a>
+                    </li>
+                    
+                    <!-- <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Dropdown</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="#"
+                                >Action 1</a
+                            >
+                            <a class="dropdown-item" href="#"
+                                >Action 2</a
+                            >
+                        </div>
+                    </li> -->
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input
+                        class="form-control me-sm-2"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button
+                        class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
     </nav>
+    
 
     <!-- HEADER -->
-    <header id="miuul_header_id">
+    <header id="miuul_header_id" class="mt-5">
         <!-- <img src="" alt="miuul picture"> -->
         <h1 id="miuul_heading_id">Miuul Frontend Eğitimine Hoşgeldiniz</h1>
         <p id="miuul_header_p_id">Html,Css,JavaScript,Boostrap</p>
         <a href="#" id="miuul_linkedin_id" class="miuul_header_icon"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#" id="miuul_youtube_id" class="miuul_header_icon"><i class="fa-brands fa-youtube"></i></a>
         <a href="#" id="miuul_github_id" class="miuul_header_icon"><i class="fa-brands fa-github"></i></a>
-
     </header>
-
 
     <!-- MAIN -->
     <main>
+
+        <!-- ABOUT START -->
+
         <section id="section_about_me_id">
+            <h2 class="section_about_me_id text-center mb-4">About Me</h2>
+            <div class="container d-inline-block">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./img/c113b639bc6a65419b4c7c5d6da1dca7.jpg" alt="Profil Fotografi">
+                    </div>
+                    <div class="col-6">
+                        <h2 class="class text-center display-4">About</h2>
+                        <p class="miuul_line_clamp15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut quae possimus, tenetur beatae rerum maiores, quas minima, voluptas eum autem cumque enim. Quasi a rem dolorum, voluptas alias recusandae!
+                        Fugit, eligendi officia fuga aliquam soluta esse mollitia neque hic! Nisi, earum atque. Nemo facere rerum ea repudiandae eum quo soluta libero modi at eaque. Placeat a natus inventore aperiam?
+                        Consequatur dolorum eos repellat, itaque accusamus labore ducimus ratione perferendis quos et sit! Veniam, autem aut architecto culpa, dolores quidem rerum animi qui ipsum magnam exercitationem ab ea ut error.
+                        Nisi, voluptate nam. Fuga sit, mollitia dicta, blanditiis voluptatem quia ipsa aliquid at ut obcaecati nesciunt ullam veritatis sequi voluptates. Magnam a veniam inventore rerum quae, aliquam culpa error nihil!
+                        Asperiores voluptatum, sunt omnis doloribus hic similique. Blanditiis sed sapiente possimus commodi sunt iste harum in, quaerat quasi labore magni facilis aliquid deleniti magnam architecto. Facere suscipit magni nobis deleniti!</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="section_blog_id"></section>
-        <section id="section_contact_id"></section>
+        <!-- ABOUT END -->
+
+
+        <!-- BLOG START -->
+
+         <section id="section_blog_id">
+            <h2 class="section_blog_id text-center mb-5">Blog</h2>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/images (1).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Blog-1</h4>
+                                <p class="card-text miuul_line_clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim sint, molestiae ab, iusto, unde facilis quod odit sunt labore maxime eligendi. Voluptatibus modi atque deserunt, eius aliquid voluptatum repudiandae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/images (1).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Blog-1</h4>
+                                <p class="card-text miuul_line_clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim sint, molestiae ab, iusto, unde facilis quod odit sunt labore maxime eligendi. Voluptatibus modi atque deserunt, eius aliquid voluptatum repudiandae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/images (1).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Blog-1</h4>
+                                <p class="card-text miuul_line_clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim sint, molestiae ab, iusto, unde facilis quod odit sunt labore maxime eligendi. Voluptatibus modi atque deserunt, eius aliquid voluptatum repudiandae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/images (1).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Blog-1</h4>
+                                <p class="card-text miuul_line_clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim sint, molestiae ab, iusto, unde facilis quod odit sunt labore maxime eligendi. Voluptatibus modi atque deserunt, eius aliquid voluptatum repudiandae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/images (1).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Blog-1</h4>
+                                <p class="card-text miuul_line_clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim sint, molestiae ab, iusto, unde facilis quod odit sunt labore maxime eligendi. Voluptatibus modi atque deserunt, eius aliquid voluptatum repudiandae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/images (1).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Blog-1</h4>
+                                <p class="card-text miuul_line_clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim sint, molestiae ab, iusto, unde facilis quod odit sunt labore maxime eligendi. Voluptatibus modi atque deserunt, eius aliquid voluptatum repudiandae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/images (1).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Blog-1</h4>
+                                <p class="card-text miuul_line_clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim sint, molestiae ab, iusto, unde facilis quod odit sunt labore maxime eligendi. Voluptatibus modi atque deserunt, eius aliquid voluptatum repudiandae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/images (1).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Blog-1</h4>
+                                <p class="card-text miuul_line_clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim sint, molestiae ab, iusto, unde facilis quod odit sunt labore maxime eligendi. Voluptatibus modi atque deserunt, eius aliquid voluptatum repudiandae.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        </section>
+
+        <!-- BLOG END  -->
+
+        <!-- CONTACT START -->
+
+        <section id="section_contact_id">
+            <h2 class="section_contact_id text-center mb-5">Contact</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=564&amp;height=178&amp;hl=en&amp;q=Bursa&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:178px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:178px;}.gmap_iframe {height:178px!important;}</style></div>
+                    </div>
+                </div>
+            </div>
+                   
+            </div>
+            </div>
+        </section>
+
+        <!-- CONTACT END -->
     </main>
 
     <a href="#miuul_header_id" id="back_to_top_id"><i class="fa-solid fa-arrow-up"></i></a>
+    
 
-
-    <!-- FOOTER  -->
+    <!--FOOTER START-->
 
     <footer id="miuul_footer_id">
         <a href="mailto:mailadress">Mail Adresiniz</a>
@@ -76,6 +291,8 @@
             <p id="miuul_date_id"></p>
         </div>
     </footer>
+
+    <!-- FOOTER END -->
 
 
     <!-- END CODES -->
